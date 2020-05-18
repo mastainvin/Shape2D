@@ -1,7 +1,7 @@
 # Shape2D
 A very simple SDL2 C game engine which can animate and modify rectangles.
 
-La librairie Shape2D est un moteur de jeu gérant, seulement, des rectangles. Les fonctionnalités sont le positionnement et les modifications de formes. C’est une librairie très proche de la SDL, elle existe pour simplifier son utilisation et pour pouvoir très simplement animer des objets.
+La librairie Shape2D est un moteur de jeu gérant, seulement, des rectangles. Les fonctionnalités sont le positionnement et les modifications de formes. C’est une librairie très proche de la SDL, elle existe pour simplifier son utilisation et pour pouvoir très simplement animer des objets. Le fichier "main.c" est disponible à titre d'exemple afin de comprendre l'utilisation des fonctions.
 
 ## Structures
 
@@ -34,17 +34,17 @@ SHP_bool
 void SHP_PrintSprite(SHP_Sprite sprite,SDL_Renderer *renderer)
 ```
 
-Permet d'afficher un sprite précédemment créé
+Permet d'afficher un sprite précédemment créé.
 
 ```
 void SHP_Limit_FPS(unsigned int limit)
 ```
 
-Permet de contrôler la limite de fps au sein du jeu
+Permet de contrôler la limite de fps au sein du jeu.
 
 ### Son utilisation
 
-À mettre dans la boucle de jeu 
+À mettre dans la boucle de jeu .
 
 ```
 int frame_limit = SDL_GetTicks() + SHP_FRAME_PER_SECOND;

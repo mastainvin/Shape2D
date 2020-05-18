@@ -7,10 +7,10 @@ La librairie Shape2D est un moteur de jeu gérant, seulement, des rectangles. Le
 
 ## Fonctions disponibles
 
-  void SHP_PrintSprite(SHP_Sprite sprite,SDL_Renderer *renderer)
+void SHP_PrintSprite(SHP_Sprite sprite,SDL_Renderer *renderer)
   
 Permet d'afficher un sprite précédemment créé
 
-  void SHP_Limit_FPS(unsigned int limit)
+void SHP_Limit_FPS(unsigned int limit)
   
 Permet de contrôler la limite de fps au sein du jeu

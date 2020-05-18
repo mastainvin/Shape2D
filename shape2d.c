@@ -8,12 +8,12 @@ date : 05/18/2020
 #include <stdlib.h>
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_ttf.h>
+
 #include "shape2d.h"
 
 void SHP_PrintSprite(SHP_Sprite sprite, SDL_Renderer *renderer)
 {
-	/* display of the rectangle and the text if it exists in its center */ 
-	
+	/* display of the rectangle and the text if it exists in its center */
 
 	// rectangle
 	if (SDL_SetRenderDrawColor(renderer, sprite.background_color.r, sprite.background_color.g, sprite.background_color.b, 255) != 0)
@@ -29,7 +29,7 @@ void SHP_PrintSprite(SHP_Sprite sprite, SDL_Renderer *renderer)
 	}
 
 	// If the text exist we display in the center the text with his color
-	if(sprite.text != '\0')
+	if (sprite.text != '\0')
 	{
 		SDL_Surface *text_surface = NULL;
 		SDL_Texture *text_texture = NULL;
@@ -66,7 +66,6 @@ void SHP_PrintSprite(SHP_Sprite sprite, SDL_Renderer *renderer)
 		TTF_CloseFont(font);
 		SDL_DestroyTexture(text_texture);
 	}
-	
 }
 
 void SHP_Limit_FPS(unsigned int limit)
@@ -78,7 +77,7 @@ void SHP_Limit_FPS(unsigned int limit)
 	{
 		SDL_Delay(period);
 	}
-	else 
+	else
 	{
 		SDL_Delay(limit - tick);
 	}

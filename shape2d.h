@@ -17,9 +17,9 @@ typedef enum SHP_bool
 {
 	false,
 	true
-}SHP_bool;
+} SHP_bool;
 
-// Structures 
+// Structures
 typedef struct SHP_Sprite
 {
 	SDL_Rect background;
@@ -27,11 +27,10 @@ typedef struct SHP_Sprite
 	char *text;
 	SDL_Color text_color;
 	int text_size;
-}SHP_Sprite;
+} SHP_Sprite;
 
 // Functions protoype
-void SHP_PrintSprite(SHP_Sprite sprite,SDL_Renderer *renderer);
-SHP_Sprite *SHP_CreateSpriteFromRect(SDL_Rect rect, double angle, SDL_Color color, char *text);
+void SHP_PrintSprite(SHP_Sprite sprite, SDL_Renderer *renderer);
 void SHP_Limit_FPS(unsigned int limit);
 
 #endif

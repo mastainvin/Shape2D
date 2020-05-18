@@ -1,12 +1,11 @@
 /*
-title : HOW to use shape2d in exemple
+title : How to use shape2d in exemple
 autor : Mastain Vincent
 date : 05/18/2020
 */
 
 #include <stdio.h>
 #include <stdlib.h>
-
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_ttf.h>
 
@@ -36,7 +35,7 @@ int main(int argc, char **argv)
 	sprite.background_color.g = 255;
 	sprite.background_color.b = 255;
 
-	sprite.text = "écouteurs";
+	sprite.text = "test";
 
 	sprite.text_color.r = 0;
 	sprite.text_color.g = 0;
@@ -87,10 +86,9 @@ int main(int argc, char **argv)
 		frame_limit = SDL_GetTicks() + SHP_FRAME_PER_SECOND;
 	}
 
-// 
-SDL_DestroyWindow(window);
-SDL_DestroyRenderer(renderer);
-SDL_Quit();
-TTF_Quit();
-return 0;
+	SDL_DestroyWindow(window);
+	SDL_DestroyRenderer(renderer);
+	SDL_Quit();
+	TTF_Quit();
+	return 0;
 }

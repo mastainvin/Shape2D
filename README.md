@@ -34,3 +34,11 @@ void SHP_Limit_FPS(unsigned int limit)
 ```
 
 Permet de contrôler la limite de fps au sein du jeu
+
+### Son utilisation
+
+```
+int frame_limit = SDL_GetTicks() + SHP_FRAME_PER_SECOND;
+SHP_Limit_FPS(frame_limit);
+frame_limit = SDL_GetTicks() + SHP_FRAME_PER_SECOND;
+```

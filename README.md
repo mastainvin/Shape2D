@@ -37,6 +37,8 @@ Permet de contrôler la limite de fps au sein du jeu
 
 ### Son utilisation
 
+À mettre dans la boucle de jeu 
+
 ```
 int frame_limit = SDL_GetTicks() + SHP_FRAME_PER_SECOND;
 SHP_Limit_FPS(frame_limit);

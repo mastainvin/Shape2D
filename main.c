@@ -21,7 +21,7 @@ int main(int argc, char **argv)
 	SDL_Window *window = NULL;
 	SDL_CreateWindowAndRenderer(800, 600, 0, &window, &renderer);
 
-	SHP_bool continue = true;
+	SHP_bool play = true;
 	int frame_limit = SDL_GetTicks() + SHP_FRAME_PER_SECOND;
 
 	// Sprite creation with text in UTF8
@@ -54,7 +54,7 @@ int main(int argc, char **argv)
 	background.background_color.g = 0;
 	background.background_color.b = 0;
 
-	while (continue)
+	while (play)
 	{
 		// Déclaration de la variable événement
 		SDL_Event event;
@@ -66,7 +66,7 @@ int main(int argc, char **argv)
 			{
 			case SDL_QUIT:
 			{
-				continue = false;
+				play = false;
 			}
 			break;
 

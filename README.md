@@ -21,7 +21,7 @@ int text_size
 
 Nous ne sommes pas obligés de donner un texte au sprite.
 
-## Fonctions disponibles
+## Fonctions 
 
 ```
 void SHP_PrintSprite(SHP_Sprite sprite,SDL_Renderer *renderer)

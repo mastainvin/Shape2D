@@ -1,3 +1,9 @@
+/*
+title : HOW to use shape2d in exemple
+autor : Mastain Vincent
+date : 05/18/2020
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -8,15 +14,18 @@
 
 int main(int argc, char **argv)
 {
+	// SDL and TTF init + renderer and window creation
 	SDL_Init(SDL_INIT_VIDEO);
 	TTF_Init();
+
 	SDL_Renderer *renderer = NULL;
 	SDL_Window *window = NULL;
 	SDL_CreateWindowAndRenderer(800, 600, 0, &window, &renderer);
 
-	bool continuer = true;
+	SHP_bool continue = true;
 	int frame_limit = SDL_GetTicks() + SHP_FRAME_PER_SECOND;
 
+	// Sprite creation with text in UTF8
 	SHP_Sprite sprite;
 	sprite.background.x = 0;
 	sprite.background.y = 0;
@@ -27,13 +36,15 @@ int main(int argc, char **argv)
 	sprite.background_color.g = 255;
 	sprite.background_color.b = 255;
 
-	sprite.text = "Test";
+	sprite.text = "écouteurs";
 
 	sprite.text_color.r = 0;
 	sprite.text_color.g = 0;
 	sprite.text_color.b = 0;
 
 	sprite.text_size = 20;
+
+	// Sprite creation with text
 	SHP_Sprite background;
 	background.background.x = 0;
 	background.background.y = 0;
@@ -44,8 +55,7 @@ int main(int argc, char **argv)
 	background.background_color.g = 0;
 	background.background_color.b = 0;
 
-
-	while (continuer)
+	while (continue)
 	{
 		// Déclaration de la variable événement
 		SDL_Event event;
@@ -57,7 +67,7 @@ int main(int argc, char **argv)
 			{
 			case SDL_QUIT:
 			{
-				continuer = false;
+				continue = false;
 			}
 			break;
 
@@ -76,6 +86,8 @@ int main(int argc, char **argv)
 		SHP_Limit_FPS(frame_limit);
 		frame_limit = SDL_GetTicks() + SHP_FRAME_PER_SECOND;
 	}
+
+// 
 SDL_DestroyWindow(window);
 SDL_DestroyRenderer(renderer);
 SDL_Quit();

@@ -9,7 +9,7 @@ La librairie Shape2D est un moteur de jeu gérant, seulement, des rectangles. Le
 ```
 SHP_Sprite
 ```
-### Éléments dans le type
+#### Éléments dans le type
 
 ```
 SDL_Rect background
@@ -20,6 +20,13 @@ int text_size
 ```
 
 Nous ne sommes pas obligés de donner un texte au sprite.
+
+### Le type bool
+
+```
+SHP_bool
+```
+
 
 ## Fonctions 
 

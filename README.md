@@ -12,12 +12,14 @@ SHP_Sprite
 ### Éléments dans le type
 
 ```
-  SDL_Rect background
+  	SDL_Rect background
 	SDL_Color background_color
 	char *text
 	SDL_Color text_color
 	int text_size
 ```
+
+Nous ne sommes pas obligés de donner un texte au sprite.
 
 ## Fonctions disponibles
 

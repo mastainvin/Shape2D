@@ -3,7 +3,21 @@ A very simple SDL2 C game engine which can animate and modify rectangles.
 
 La librairie Shape2D est un moteur de jeu gérant, seulement, des rectangles. Les fonctionnalités sont le positionnement et les modifications de formes. C’est une librairie très proche de la SDL, elle existe pour simplifier son utilisation et pour pouvoir très simplement animer des objets.
 
+## Structures
 
+### Le type sprite
+```
+SHP_Sprite
+```
+### Éléments dans le type
+
+```
+  SDL_Rect background
+	SDL_Color background_color
+	char *text
+	SDL_Color text_color
+	int text_size
+```
 
 ## Fonctions disponibles
 

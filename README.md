@@ -18,7 +18,8 @@ SHP_Sprite
 ```
 SDL_Rect background
 SDL_Color background_color
-char *text
+SHP_bool withText
+char text[100]
 SDL_Color text_color
 int text_size
 ```

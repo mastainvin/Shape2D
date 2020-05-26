@@ -5,7 +5,7 @@ La librairie Shape2D est un moteur de jeu gérant, seulement, des rectangles. Le
 
 ## Compilation
 
-Téléchargez les sources shape2d.c et shape2d.h placez les dans votre fichier source. Pour que la compilation ce déroule normalement veuillez rajouter les flages SDL2 et SDL2_ttf. 
+Téléchargez les sources shape2d.c et shape2d.h placez les dans votre fichier source. Pour que la compilation ce déroule normalement veuillez rajouter les flags SDL2 et SDL2_ttf. 
 
 ## Structures
 
